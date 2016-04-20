@@ -25,7 +25,7 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-type dpmservice_app, domain;
+type dpmservice_app, domain, domain_deprecated;
 app_domain(dpmservice_app)
 
 #allow db create, write, read and access

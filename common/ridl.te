@@ -26,7 +26,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # RIDL
-type RIDL, domain;
+type RIDL, domain, domain_deprecated;
 type RIDL_exec, exec_type, file_type;
 
 type_transition RIDL RIDL_data_file:sock_file RIDL_socket;
