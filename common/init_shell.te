@@ -149,3 +149,6 @@ allow qti_init_shell cgroup:dir add_name;
 
 #execute init scripts
 allow qti_init_shell toolbox_exec:file rx_file_perms;
+
+#For configfs permission
+allow qti_init_shell configfs:dir r_dir_perms;
