@@ -168,3 +168,5 @@ type audio_pp_data_file, file_type, data_file_type;
 
 # subsystem_ramdump files
 type ssr_ramdump_data_file, file_type, data_file_type;
+
+type persist_time_file, file_type;
