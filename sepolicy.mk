@@ -1,11 +1,6 @@
-# Board specific SELinux policy variable definitions
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-LOCAL_PATH:= $(call my-dir)
 BOARD_SEPOLICY_DIRS := \
        $(BOARD_SEPOLICY_DIRS) \
-       $(LOCAL_PATH) \
-       $(LOCAL_PATH)/common \
-       $(LOCAL_PATH)/test \
-       $(LOCAL_PATH)/$(TARGET_BOARD_PLATFORM)
-
-endif
+       device/qcom/sepolicy \
+       device/qcom/sepolicy/common \
+       device/qcom/sepolicy/test \
+       device/qcom/sepolicy/$(TARGET_BOARD_PLATFORM)
